@@ -26,8 +26,116 @@ body .wrapper {
 }
 body .wrapper .mainSection {
   height: 80vh;
-  width: 90vw;
+  width: 80vw;
   background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body .wrapper .mainSection .wrapperSecondSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 45vw;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .wrapper .mainSection .wrapperSecondSection .describe {
+  height: 80%;
+  width: 30vw;
+  background-color: rgb(255, 255, 255);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  position: relative;
+}
+body .wrapper .mainSection .wrapperSecondSection .describe .companyName {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: orangered;
+  margin-bottom: 20px;
+}
+body .wrapper .mainSection .wrapperSecondSection .describe .edition {
+  font-size: 30px;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+body .wrapper .mainSection .wrapperSecondSection .describe .description {
+  line-height: 25px;
+  color: gray;
+}
+body .wrapper .mainSection .wrapperSecondSection .describe .discountFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+}
+body .wrapper .mainSection .wrapperSecondSection .describe .discountFlex .prize {
+  font-size: 25px;
+  font-weight: 700;
+}
+body .wrapper .mainSection .wrapperSecondSection .describe .discountFlex .discount {
+  margin-left: 10px;
+  height: 30px;
+  width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgb(236, 223, 200);
+  color: orangered;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body .wrapper .mainSection .wrapperSecondSection .describe .earlierPrize {
+  color: gray;
+  font-size: 15px;
+  text-decoration: line-through;
+  line-height: 35px;
+}
+body .wrapper .mainSection .wrapperSecondSection .describe .flexCounter {
+  position: absolute;
+  bottom: -30px;
+  min-height: 12vh;
+  min-width: 25vw;
+  border: 2px solid red;
+}
+body .wrapper .mainSection .wrapperSecondSection .describe .buy {
+  height: 5vh;
+  width: 15vw;
+  border-radius: 5px;
+  border-color: transparent;
+  background-color: orangered;
+  color: white;
+  font-weight: 700;
+}
+body .wrapper .mainSection .wrapperSecondSection .describe .buy:hover {
+  background-color: orange;
+}
+body .wrapper .mainSection .glass {
+  width: 45vw;
+  height: 100%;
 }
 body .header {
   display: -webkit-box;
