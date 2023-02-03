@@ -8,7 +8,7 @@
 body {
   max-height: 100vh;
   width: 100vw;
-  background-color: pink;
+  background-color: rgb(238, 222, 150);
   font-family: "Kumbh Sans", sans-serif;
 }
 body .wrapper {
@@ -31,6 +31,88 @@ body .wrapper .mainSection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+body .wrapper .mainSection .containerFirst {
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  width: 40vw;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .wrapper .mainSection .containerFirst .img-container {
+  width: 40vw;
+  height: 50vh;
+  border-radius: 5px;
+  position: relative;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+body .wrapper .mainSection .containerFirst .img-container .img-container:hover span {
+  display: none;
+}
+body .wrapper .mainSection .containerFirst .img-container .fotoMain {
+  width: 60%;
+  display: block;
+  margin: auto;
+}
+body .wrapper .mainSection .containerFirst .img-container .hover {
+  z-index: 5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.6);
+  display: block;
+  padding: 0.5rem 1rem;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #eee;
+  text-align: center;
+}
+body .wrapper .mainSection .containerFirst:hover {
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+body .wrapper .mainSection .containerFirst .list-products {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 350px;
+  margin: auto;
+  z-index: 10;
+  height: 20vh;
+}
+body .wrapper .mainSection .containerFirst .list-products .active {
+  width: 40%;
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 3px;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+body .wrapper .mainSection .containerFirst .list-products .active .smallfotoMain,
+body .wrapper .mainSection .containerFirst .list-products .active .secondPhoto,
+body .wrapper .mainSection .containerFirst .list-products .active .thirdPhoto {
+  height: 10vh;
+  margin-top: 1rem;
+}
+body .wrapper .mainSection .containerFirst .list-products .firstPhoto {
+  padding: 0.15rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 6px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 6px 8px;
 }
 body .wrapper .mainSection .wrapperSecondSection {
   display: -webkit-box;
@@ -117,9 +199,80 @@ body .wrapper .mainSection .wrapperSecondSection .describe .earlierPrize {
 body .wrapper .mainSection .wrapperSecondSection .describe .flexCounter {
   position: absolute;
   bottom: -30px;
-  min-height: 12vh;
+  height: 15vh;
   min-width: 25vw;
-  border: 2px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body .wrapper .mainSection .wrapperSecondSection .describe .flexCounter .counter {
+  margin-right: 20px;
+  position: relative;
+  width: 10vw;
+  height: 5vh;
+  padding: 30px 20px;
+  border-radius: 9px;
+  -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+          box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+body .wrapper .mainSection .wrapperSecondSection .describe .flexCounter .counter .counter:after {
+  content: "";
+  z-index: -1;
+  border-radius: 8px;
+  background-color: lightblue;
+}
+body .wrapper .mainSection .wrapperSecondSection .describe .flexCounter .counter h1 {
+  text-align: center;
+  font-family: "Roboto Mono";
+  font-size: 20px;
+}
+body .wrapper .mainSection .wrapperSecondSection .describe .flexCounter .counter .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body .wrapper .mainSection .wrapperSecondSection .describe .flexCounter .counter .btns > button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  width: 100px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+          box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+body .wrapper .mainSection .wrapperSecondSection .describe .flexCounter .counter .btns button.inc,
+body .wrapper .mainSection .wrapperSecondSection .describe .flexCounter .counter .btns button.dec {
+  background-color: rgb(223, 178, 55);
+  color: #fff;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+          box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+body .wrapper .mainSection .wrapperSecondSection .describe .flexCounter .counter .btns button.reset {
+  background-color: transparent;
+  border: 4px solid rgb(168, 141, 67);
+  color: rgb(180, 116, 74);
+}
+body .wrapper .mainSection .wrapperSecondSection .describe .flexCounter .counter .btns button.reset:hover,
+body .wrapper .mainSection .wrapperSecondSection .describe .flexCounter .counter .btns button.inc:hover,
+body .wrapper .mainSection .wrapperSecondSection .describe .flexCounter .counter .btns button.dec:hover {
+  background-color: rgb(201, 122, 19);
+  color: #000000;
 }
 body .wrapper .mainSection .wrapperSecondSection .describe .buy {
   height: 5vh;
@@ -129,9 +282,13 @@ body .wrapper .mainSection .wrapperSecondSection .describe .buy {
   background-color: orangered;
   color: white;
   font-weight: 700;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+          box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 body .wrapper .mainSection .wrapperSecondSection .describe .buy:hover {
-  background-color: orange;
+  background-color: rgb(196, 143, 46);
 }
 body .wrapper .mainSection .glass {
   width: 45vw;
